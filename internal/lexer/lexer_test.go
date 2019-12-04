@@ -23,7 +23,7 @@ func TestNextToken(t *testing.T) {
 		{token.EOF, ""},
 	}
 
-	var l = New(input)
+	var l = NewLexer(input)
 
 	for i, tt := range tests {
 		var tok = l.NextToken()
